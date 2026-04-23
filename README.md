@@ -457,5 +457,3 @@ D:\备份\Second_State_Diffusion_Policy_20260420_082822
    - `policy_last.pt`
    - 评估 CSV
    - 一段成功或失败代表性视频
-#   S e c o n d _ S t a t e _ D i f f u s i o n _ P o l i c y _ b a c k u p s  
- 
