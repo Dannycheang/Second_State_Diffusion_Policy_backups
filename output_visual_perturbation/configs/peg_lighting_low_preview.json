@@ -1,0 +1,41 @@
+{
+  "enabled": true,
+  "name": "peg_lighting_low_preview",
+  "env": "PegInsertionSide-v1",
+  "policy_checkpoint": "output_peg_state_motionplanning_resume/checkpoints/policy_best.pt",
+  "policy_input_type": "state",
+  "perturbation_type": "lighting",
+  "perturbation_level": "low",
+  "camera_config": {
+    "mode": "offline_video_preview",
+    "note": "Peg is included as a preview only because the baseline is not stably converged."
+  },
+  "lighting_config": {
+    "brightness_delta": -28,
+    "contrast_scale": 0.94,
+    "gamma": 1.08
+  },
+  "background_config": {
+    "overlay_color_rgb": [
+      22,
+      20,
+      28
+    ],
+    "overlay_alpha": 0.06
+  },
+  "frame_effects": {
+    "brightness": -28,
+    "contrast": 0.94,
+    "gamma": 1.08,
+    "overlay_color_rgb": [
+      22,
+      20,
+      28
+    ],
+    "overlay_alpha": 0.06
+  },
+  "eval_episodes": 30,
+  "success_rate": 30.0,
+  "video_path": "output_visual_perturbation/videos/peg_lighting_low_preview.mp4",
+  "notes": "Task-4 Peg preview only. Render-only perturbation does not test visual robustness."
+}

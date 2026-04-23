@@ -1,0 +1,41 @@
+{
+  "enabled": true,
+  "name": "pickcube_lighting_low",
+  "env": "PickCube-v1",
+  "policy_checkpoint": "output_pickcube_state_final/checkpoints/policy_best.pt",
+  "policy_input_type": "state",
+  "perturbation_type": "lighting",
+  "perturbation_level": "low",
+  "camera_config": {
+    "mode": "offline_video_preview",
+    "note": "No simulator camera pose change is applied in offline mode."
+  },
+  "lighting_config": {
+    "brightness_delta": -35,
+    "contrast_scale": 0.92,
+    "gamma": 1.12
+  },
+  "background_config": {
+    "overlay_color_rgb": [
+      18,
+      24,
+      36
+    ],
+    "overlay_alpha": 0.08
+  },
+  "frame_effects": {
+    "brightness": -35,
+    "contrast": 0.92,
+    "gamma": 1.12,
+    "overlay_color_rgb": [
+      18,
+      24,
+      36
+    ],
+    "overlay_alpha": 0.08
+  },
+  "eval_episodes": 10,
+  "success_rate": 100.0,
+  "video_path": "output_visual_perturbation/videos/pickcube_lighting_low.mp4",
+  "notes": "Task-4 render-only perturbation preview for PickCube baseline."
+}

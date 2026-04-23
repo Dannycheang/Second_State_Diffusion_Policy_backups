@@ -1,0 +1,39 @@
+{
+  "enabled": true,
+  "name": "pickcube_background_color_01",
+  "env": "PickCube-v1",
+  "policy_checkpoint": "output_pickcube_state_final/checkpoints/policy_best.pt",
+  "policy_input_type": "state",
+  "perturbation_type": "background",
+  "perturbation_level": "low",
+  "camera_config": {
+    "mode": "offline_video_preview",
+    "note": "No simulator camera pose change is applied in offline mode."
+  },
+  "lighting_config": {
+    "brightness_delta": -6,
+    "contrast_scale": 0.98,
+    "gamma": 1.02
+  },
+  "background_config": {
+    "overlay_color_rgb": [
+      46,
+      64,
+      88
+    ],
+    "overlay_alpha": 0.16
+  },
+  "frame_effects": {
+    "brightness": -6,
+    "contrast": 0.98,
+    "gamma": 1.02,
+    "overlay_color_rgb": [
+      46,
+      64,
+      88
+    ],
+    "overlay_alpha": 0.16
+  },
+  "eval_episodes": 10,
+  "notes": "Task-4 background color perturbation preview for PickCube baseline."
+}

@@ -1,0 +1,40 @@
+{
+  "enabled": true,
+  "name": "pickcube_camera_shift_01",
+  "env": "PickCube-v1",
+  "policy_checkpoint": "output_pickcube_state_final/checkpoints/policy_best.pt",
+  "policy_input_type": "state",
+  "perturbation_type": "camera",
+  "perturbation_level": "medium",
+  "camera_config": {
+    "translate_x_px": 16,
+    "translate_y_px": -10,
+    "zoom": 1.03,
+    "mode": "offline_video_preview"
+  },
+  "lighting_config": {
+    "brightness_delta": 0,
+    "contrast_scale": 1.0
+  },
+  "background_config": {
+    "border_color_rgb": [
+      8,
+      8,
+      8
+    ]
+  },
+  "frame_effects": {
+    "translate_x": 16,
+    "translate_y": -10,
+    "zoom": 1.03,
+    "border_color_rgb": [
+      8,
+      8,
+      8
+    ]
+  },
+  "eval_episodes": 10,
+  "success_rate": 100.0,
+  "video_path": "output_visual_perturbation/videos/pickcube_camera_shift_01.mp4",
+  "notes": "Task-4 camera perturbation preview for PickCube baseline."
+}

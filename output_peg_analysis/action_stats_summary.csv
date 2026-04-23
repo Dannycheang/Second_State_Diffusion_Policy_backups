@@ -1,0 +1,3 @@
+name,steps,reward,success,mean_abs_action,max_abs_action,sat_ratio_abs_ge_0.99,tail50_mean_abs_action,tail50_max_abs_action
+peg_online_baseline_preview,191,68.75263605918735,True,0.25228026509284973,1.0,0.1099476439790576,0.1899576634168625,1.0
+peg_online_lighting_low_preview,191,68.75263605918735,True,0.25228026509284973,1.0,0.1099476439790576,0.1899576634168625,1.0
